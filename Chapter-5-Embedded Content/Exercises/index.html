@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Embedded Video</title>
+<style>
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('background.jpg'); 
+  background-size: cover;
+}
+
+.video-container {
+  position: relative;
+  width: 50%; 
+}
+
+video {
+  width: 100%; 
+  height: auto; 
+}
+
+.poster {
+  position: static;
+  justify-content: center;
+  top: 100px; 
+  left: 10px;
+  width: 30%; 
+  height: auto; 
+  background-size: auto ;
+  z-index: 1;
+}
+</style>
+</head>
+<body>
+<div class="video-container">
+  <img src="poster.jpg" alt="Video Poster" class="poster"> 
+  <video autoplay loop controls>
+    <source src="video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+</body>
+</html>
